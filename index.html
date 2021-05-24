@@ -5,9 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>template</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- favicon link -->
+    <!-- <link rel="icon" href=" https://www.google.com/s2/favicons?domain=  "> -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=KoHo' rel='stylesheet'>
+        <title>Quote Generator</title>
 </head>
-<body>
+<body onload="getQuote()">
+    <div class="container" id="quote-body">
+        
+        <!-- Quote -->
+        <div class="quote">
+            
+            <!-- Qoute icon -->
+            <div class="icon-container">
+                <i class="fas fa-quote-left" id="ql-icon">
+                    <span class="qoute-text" id="qouteId"></span>
+                    <i class="fas fa-quote-right" id="#qr-icon" ></i>
+                </i>
+            </div> 
+        </div>
+        <!-- Author -->
+        <div class="line">
+            <hr>
+        </div>
+        <div class="qoute-author">
+            <span id="author"></span>
+        </div>
+        <!-- buttons -->
+        <div class="button-container">
+            <button  id="tweeting" class="tweet-btn  twitter" title="Tweet it">
+                <i class="fab fa-twitter"></i>
+            </button>
+            <button onclick="getQuote()" class="tweet-btn generate" title="More!">
+                <i class="fas fa-redo-alt"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Loader -->
+    <div id="loader"></div>
+
+    <!-- Script -->
     <script src="script.js"> 
     
     </script>    
