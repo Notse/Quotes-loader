@@ -25,7 +25,7 @@ function showPage(){
         // Quote Api Url 
         const url = 'https://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=json';
         try {
-            let response = await fetch(proxy + url);
+            let response = await fetch(url);
             let data = await response.json();
                 if(data.quoteAuthor === ''){
                     Author.innerText = 'Unknown';
