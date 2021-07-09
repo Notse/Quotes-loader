@@ -21,11 +21,11 @@ function showPage(){
     async  function getQuote() {
         Loading();
         //Cors issue solved link
-        const proxy = 'CORS_URL_HERE';
+        const proxy = 'https://enigmatic-fortress-03844.herokuapp.com/';
         // Quote Api Url 
         const url = 'https://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=json';
         try {
-            let response = await fetch(url);
+            let response = await fetch(proxy + url);
             let data = await response.json();
                 if(data.quoteAuthor === ''){
                     Author.innerText = 'Unknown';
