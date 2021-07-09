@@ -21,7 +21,7 @@ function showPage(){
     async  function getQuote() {
         Loading();
         //Cors issue solved link
-        const proxy = 'https://enigmatic-fortress-03844.herokuapp.com/';
+        const proxy = 'CORS_URL_HERE';
         // Quote Api Url 
         const url = 'https://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=json';
         try {
